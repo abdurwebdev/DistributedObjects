@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 
 app.get("/",(req,res)=>{
-  res.send("Distributed Object Running");
+  res.status.json({
+    message:"You called an Distributed Object",
+  });
 })
 
 module.exports = app;
